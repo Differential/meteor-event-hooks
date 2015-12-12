@@ -74,7 +74,7 @@ Hooks = {
 		//= SETUP LOGIN MONITORING
 		//////////////////////////////////
 
-		Deps.autorun(function () {
+		Tracker.autorun(function () {
 			if (Meteor.userId()) {
 				// User is logged in
 				if (Hooks.loggedIn === false) {
