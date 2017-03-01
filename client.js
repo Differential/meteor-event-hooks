@@ -1,3 +1,4 @@
+import { Tracker } from "meteor/tracker";
 //////////////////////////////////
 //= SETUP HOOKS OBJECT
 //////////////////////////////////
@@ -74,7 +75,7 @@ Hooks = {
 		//= SETUP LOGIN MONITORING
 		//////////////////////////////////
 
-		Deps.autorun(function () {
+		Tracker.autorun(function () {
 			if (Meteor.userId()) {
 				// User is logged in
 				if (Hooks.loggedIn === false) {

@@ -8,7 +8,8 @@ Package.describe({
 var both = ['client', 'server']
 
 Package.onUse(function (api) {
-  api.versionsFrom("METEOR@0.9.0");
+	api.versionsFrom("1.4.2.3");
+	api.use('ecmascript');
 
 	api.addFiles(['client.js'], 'client');
 	api.addFiles(['server.js'], 'server');
